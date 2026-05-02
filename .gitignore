@@ -1,0 +1,8 @@
+inputs/
+outputs/sptulsian_ipo_analysis.csv
+outputs/sptulsian_ipo_analysis_index.csv
+outputs/sptulsian_ipo_analysis_index_all.csv
+outputs/sptulsian_ipo_analysis_parsed.csv
+outputs/sptulsian_ipo_articles_structured_v1.xlsx
+outputs/sptulsian_ipo_articles_text_orig.xlsx
+scripts/__pycache__/

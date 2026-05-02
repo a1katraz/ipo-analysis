@@ -1,0 +1,19 @@
+Extraction Process from mini_desc:
+a. IPO subscription start date in mm/dd/yyyy format (ipo_start_date)
+b. IPO subscription end date in  mm/dd/yyyy format (ipo_end_date)
+c. Issue size in  Crores as a number, no cr symbol needed (issue_size_in_cr)
+d. issue type: Fresh Issue | Fresh cum OFS | OFS | none (issue_type)
+e. price band lower in number format (ipo_price_lower)
+f. price band upper in number format, if it does not exist, use the same value as pioce band lower (ipo_price_higher)
+
+Extraction process from article_text:
+a. find the listing date as mm/dd/yyyy (listing_date)
+b. find the usage of the funds as text blob (fund_usage)
+c. find the industry segment of the company on best guess basis (ind_segment_guess)
+d. understand the financial parameters being used in the article, ignoring their values, for company evaluation and give this as a list ([eval_params])
+e. understand the arguments made in the article to adjudge the correctness of these financial parameters as a list ([eval_args])
+f. find the associated risk factors in the ipo as a list ([risk_factors])
+g. understand the factors used to adjudge the pricing of the ipo as a list ([pricing_params])
+h. evaluation arguments made to adjudge if the pricing is  okay as a list ([pricing_args])
+i. if any comparators are used, find the financial ratios compared as a list ([comp_fin_ratios])
+j. give the investment verdict as positive or negative based on the article text sentiment (verdict)
